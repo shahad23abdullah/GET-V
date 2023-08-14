@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h1>Received GET Variables</h1>
+    <p>This page receives and displays GET variables using PHP.</p>
+
+    <?php
+    if (isset($_GET['v1']) )) {
+        $v1 = $_GET['v1'];
+
+        echo "<p><strong>Variable 1:</strong> $v1</p>";
+
+    } else {
+        echo "<p>No GET variable was provided.</p>";
+    }
+    ?>
+</body>
+</html>
